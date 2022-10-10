@@ -1,4 +1,4 @@
-NAME := a.out
+NAME := convert
 CXX := c++
 CXXFLAGS := -Wall -Wextra -Werror -std=c++98
 SRCS_DIR := ./srcs
@@ -22,6 +22,7 @@ $(OBJS_DIR)/%.o: $(SRCS_DIR)/%.cpp
 
 clean:
 	$(RM) $(OBJS_DIR)
+	$(RM) $(DEPS_DIR)
 
 fclean: clean
 	$(RM) $(NAME)
@@ -29,6 +30,6 @@ fclean: clean
 re: fclean all
 
 test: all
-	./$(NAME)
+	./$(NAME) 0
 
 .PHONY: all clean fclean re test
