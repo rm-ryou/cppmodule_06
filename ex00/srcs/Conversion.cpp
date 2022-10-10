@@ -288,7 +288,7 @@ void	Conversion::setOutDouble()
 		this->other_d_ = os.str() + ".0";
 	} else {
 		if (this->other_f_ == "")
-			this->other_f_ = os.str();
+			this->other_f_ = os.str() + "f";
 		this->other_d_ = os.str();
 	}
 	if (this->d_ >= INT_MIN && this->d_ <= INT_MAX)

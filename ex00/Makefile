@@ -30,6 +30,6 @@ fclean: clean
 re: fclean all
 
 test: all
-	./$(NAME) 0
+	@bash ./test/test.sh
 
 .PHONY: all clean fclean re test

@@ -1,0 +1,4 @@
+char: 'A'
+int: 65
+float: 65.0f
+double: 65.0
