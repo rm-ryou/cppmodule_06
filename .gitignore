@@ -1,4 +1,7 @@
 .vscode
-
+ex0[012]/objs/
+ex0[012]/deps/
+ex00/convert
+ex0[12]/a.out
 objs/*
 deps/*
