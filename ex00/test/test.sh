@@ -98,4 +98,12 @@ else
 	echo -e "${RED}failed${NORMAL}"
 fi
 
+./convert + > ./test/test_+
+DIF=$(diff ./test/ans/+ ./test/test_+)
+if [ "$DIF" = "" ]; then
+	echo -e "${GREEN}diff ok${NORMAL}"
+else
+	echo -e "${RED}failed '+'${NORMAL}"
+fi
+
 rm -f ./test/test_*
