@@ -1,6 +1,6 @@
-RED="\e[31m"
-GREEN="\e[32m"
-NORMAL="\e[m"
+RED="\033[31m"
+GREEN="\033[32m"
+NORMAL="\033[m"
 
 ./convert 0 > ./test/test_0
 DIF=$(diff ./test/ans/0 ./test/test_0)
